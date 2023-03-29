@@ -1,0 +1,117 @@
+/* 
+Para personalizar um id iniciamos o parâmetro com uma #
+Para personalizar uma classe iniciamos com um .
+Para personalizar uma tag inteira escrevemos somente o nome da tag
+*/
+
+body {
+    background-image: linear-gradient(
+        rgb(59,88,93),
+        rgb(29,40,42)
+    );
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    /*
+        Vamos tirar os elementos padrões dos botões
+        Para que herde do Body
+    */
+    background-color: inherit;
+    color: inherit;
+    border: none;
+}
+
+#below-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*Margem é calculada em sentido horario Cima, Dir, Baixo, Esq*/
+    margin: 3em 0 1em 0;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cover {
+    width: 450px;
+}
+
+#playlist-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0 4em 0;
+}
+
+#song-name {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#progress-bar {
+    background-color: rgb(139, 153, 156);
+    height: 3px;
+    width: 100%;
+    border-radius: 15px;
+    /*Podemos definir a margin somente em uma direção*/
+    /*margin-bottom: 1em; */
+}
+
+/* 
+colocamos o inherit para um elemento filho herdar propriedades do pai
+Para sinalizar ao css que uma propriedade é uma variavel manipulada via js colocamos --
+E para usar em outra propriedade colocamos var(--nome_var)
+*/
+#current-progress {
+    --progress: 0%;
+    width: var(--progress);
+    background-color: white;
+    height: inherit;
+    border-radius: inherit;
+}
+
+#progress-container {
+    /*padding-bottom: 1em; -> com a adição da linha temporal da progress bar não é mais necessario o padding*/
+    cursor: pointer;
+}
+
+#time-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+    margin-top: 0.5em;
+}
+
+.button {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.button-navigate {
+    font-size: 3em;
+}
+
+.button-biggest {
+    font-size: 4em;
+}
+
+.light-color {
+    color: rgb(139, 153, 156);
+}
+
+.button-active {
+    color: rgb(0, 183, 107);
+}
+
