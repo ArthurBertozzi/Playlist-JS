@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body class="d-flex flex-column" style="height: 100dvh;">
+    <div id="page-header" class="bg-secondary-subtle d-flex align-items-center justify-content-between sticky-top">
+        <img src="images/logo.png" alt="Logo Hashtag Music" style="height: 5vh;" class="mx-2 my-2">
+        <div class="input-group" style="max-width: 50%;">
+            <input type="text" 
+            id="search-term"
+            class="form-control"
+             placeholder="Pesquise a música" 
+             aria-label="Username" 
+             aria-describedby="basic-addon1">
+             <button id="search-button" type="button" class="btn btn-outline-success"><i class="bi bi-search"></i></button>
+
+        </div>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-outline-success mx-2"><i class="bi bi-music-note-list"></i> Playlist</button>
+    </div>
+    <div id="page-body" class="bg-secondary flex-grow-1 d-flex flex-wrap justify-content-center gap-2">
+  
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Sua Playlist</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+        
+    </div>
+    <!-- <div id="page-footer" class="bg-secondary-subtle">Rodapé</div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="/Music_Interface/script.js"></script>
+</body>
+</html>
